@@ -6,5 +6,5 @@ ini_set('display_errors', 1);
 
 require_once '../vendor/autoload.php';
 
-$apiKey     = 'your_api_key';
+$apiKey     = 'BFP2NNN-8384AG9-PKVTJ2F-QJBV0ZX';
 $testMode   = false;

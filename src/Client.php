@@ -63,6 +63,12 @@ class Client
      */
     public $minAmount;
 
+    /**
+     * @var \Ay4t\NOWPayments\Endpoint\GetBalance
+     * @author Ayatulloh Ahad R <ayatulloh@indiega.net>
+     */
+    public $getBalance;
+
 
     /**
      * @param string $apiKey
@@ -107,5 +113,6 @@ class Client
         $this->estimate     = new Endpoint\Estimate($this);
         $this->invoice      = new Endpoint\Invoice($this);
         $this->minAmount    = new Endpoint\MinAmount($this);
+        $this->getBalance   = new Endpoint\GetBalance($this);
     }
 }

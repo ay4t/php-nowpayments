@@ -2,9 +2,9 @@
 
 namespace Ay4t\NOWPayments\Endpoint;
 
-class Estimate extends AbstractEndpoint
+class GetBalance extends AbstractEndpoint
 {
-    const RESOURCE = 'estimate';
+    const RESOURCE = 'balance';
     
     /**
      * @return string
@@ -15,12 +15,10 @@ class Estimate extends AbstractEndpoint
     }
     
     /**
-     * @param array $query
-     * 
      * @return array
      */
-    public function get(array $query): array
+    public function get(): array
     {
-        return $this->request(parent::METHOD_GET, null, [], $query);
+        return $this->request(parent::METHOD_GET, null);
     }
 }
