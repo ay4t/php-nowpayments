@@ -1,0 +1,3 @@
+# NOWPayments API Client
+
+## Installing

@@ -1,0 +1,29 @@
+{
+	"name" : "ay4t/php-nowpayments",
+	"description" : "NOWPayments API Client",
+	"keywords" : [
+		"api",
+		"php",
+		"nowpayments"
+	],
+	"type" : "library",
+	"homepage" : "https://github.com/ay4t/php-nowpayments",
+	"license" : "MIT",
+	"authors" : [{
+			"name" : "Ayatulloh Ahad R",
+			"email" : "ayatullohahadr@gmail.com"
+		}
+	],
+	"require" : {
+		"php" : ">=7.1.0",
+		"guzzlehttp/guzzle": "^7.3"
+	},
+	"require-dev" : {
+		"symfony/error-handler" : "^5.1"
+	},
+	"autoload" : {
+		"psr-4" : {
+			"Ay4t\\NOWPayments\\" : "src/"
+		}
+	}
+}
