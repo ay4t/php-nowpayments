@@ -7,12 +7,6 @@ use GuzzleHttp\Client as GuzzleClient;
 use GuzzleHttp\RequestOptions;
 use GuzzleHttp\Exception\RequestException;
 
-/**
- * Abstract Endpoint.
- * 
- * @author Jonathan van 't Ende <jvantende@onetoweb.nl>
- * @copyright Onetoweb B.V.
- */
 abstract class AbstractEndpoint implements EndpointInterface
 {
     const METHOD_GET = 'GET';

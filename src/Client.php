@@ -70,10 +70,22 @@ class Client
     public $getBalance;
 
     /**
+     * @var \Ay4t\NOWPayments\Endpoint\Payouts
+     * @author Ayatulloh Ahad R <ayatulloh@indiega.net>
+     */
+    public $payouts;
+
+    /**
      * @var string
      * @author Ayatulloh Ahad R <ayatulloh@indiega.net>
      */
     public $headerToken;
+
+    /**
+     * @var \Ay4t\NOWPayments\Endpoint\Auth
+     * @author Ayatulloh Ahad R <ayatulloh@indiega.net>
+     */
+    public $auth;
 
 
     /**
@@ -136,5 +148,7 @@ class Client
         $this->invoice      = new Endpoint\Invoice($this);
         $this->minAmount    = new Endpoint\MinAmount($this);
         $this->getBalance   = new Endpoint\GetBalance($this);
+        $this->payouts      = new Endpoint\Payouts($this);
+        $this->auth         = new Endpoint\Auth($this);
     }
 }
