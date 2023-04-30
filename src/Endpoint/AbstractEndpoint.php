@@ -66,6 +66,10 @@ abstract class AbstractEndpoint implements EndpointInterface
         if ($method == self::METHOD_POST) {
             $options[RequestOptions::JSON] = $data;
         }
+
+        if( $this->client->getHeaderToken() ) {
+            $options[RequestOptions::HEADERS]['Authorization'] = 'Bearer ' . $this->client->getHeaderToken();
+        }
         
         try {
             

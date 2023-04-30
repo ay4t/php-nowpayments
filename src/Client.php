@@ -69,6 +69,12 @@ class Client
      */
     public $getBalance;
 
+    /**
+     * @var string
+     * @author Ayatulloh Ahad R <ayatulloh@indiega.net>
+     */
+    public $headerToken;
+
 
     /**
      * @param string $apiKey
@@ -100,6 +106,22 @@ class Client
         }
         
         return self::API_ENDPOINT;
+    }
+
+    /**
+     * @return string
+     */
+    public function getHeaderToken()
+    {
+        return $this->headerToken;
+    }
+
+    /**
+     * @param string $headerToken
+     */
+    public function setHeaderToken($headerToken)
+    {
+        $this->headerToken = $headerToken;
     }
     
     /**
