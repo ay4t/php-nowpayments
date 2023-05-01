@@ -3,10 +3,8 @@
 namespace Ay4t\NOWPayments\Endpoint;
 
 /**
- * Invoice endpoint
- * 
- * @author Jonathan van 't Ende <jvantende@onetoweb.nl>
- * @copyright Onetoweb B.V.
+ * Class Invoice
+ * @package Ay4t\NOWPayments\Endpoint
  */
 class Invoice extends AbstractEndpoint
 {

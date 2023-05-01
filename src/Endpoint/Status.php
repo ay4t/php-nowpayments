@@ -3,10 +3,8 @@
 namespace Ay4t\NOWPayments\Endpoint;
 
 /**
- * Status endpoint.
- * 
- * @author Jonathan van 't Ende <jvantende@onetoweb.nl>
- * @copyright Onetoweb B.V.
+ * Class Status
+ * @package Ay4t\NOWPayments\Endpoint
  */
 class Status extends AbstractEndpoint
 {

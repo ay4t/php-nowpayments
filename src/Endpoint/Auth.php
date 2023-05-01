@@ -2,6 +2,10 @@
 
 namespace Ay4t\NOWPayments\Endpoint;
 
+/**
+ * Class Auth
+ * @package Ay4t\NOWPayments\Endpoint
+ */
 class Auth extends AbstractEndpoint
 {
     /**

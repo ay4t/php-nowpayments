@@ -7,6 +7,10 @@ use GuzzleHttp\Client as GuzzleClient;
 use GuzzleHttp\RequestOptions;
 use GuzzleHttp\Exception\RequestException;
 
+/**
+ * Class AbstractEndpoint
+ * @package Ay4t\NOWPayments\Endpoint
+ */
 abstract class AbstractEndpoint implements EndpointInterface
 {
     const METHOD_GET = 'GET';

@@ -2,6 +2,10 @@
 
 namespace Ay4t\NOWPayments\Endpoint;
 
+/**
+ * Class Estimate
+ * @package Ay4t\NOWPayments\Endpoint
+ */
 class Estimate extends AbstractEndpoint
 {
     const RESOURCE = 'estimate';

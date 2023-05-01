@@ -3,10 +3,8 @@
 namespace Ay4t\NOWPayments\Endpoint;
 
 /**
- * Endpoint interface.
- * 
- * @author Jonathan van 't Ende <jvantende@onetoweb.nl>
- * @copyright Onetoweb B.V.
+ * Class EndpointInterface
+ * @package Ay4t\NOWPayments\Endpoint
  */
 interface EndpointInterface
 {

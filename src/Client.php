@@ -4,12 +4,23 @@ namespace Ay4t\NOWPayments;
 
 use Ay4t\NOWPayments\Endpoint;
 
+/**
+ * Class Client
+ * @package Ay4t\NOWPayments
+ * 
+ * Class ini digunakan untuk mengirim request ke API Nowpayments
+ * Untuk contoh penggunaan pada kelas ini silakan lihat pada folder testing
+ */
 class Client
 {
     /**
-     * API endpoint
+     * LIVE API endpoint
      */
     const API_ENDPOINT          = 'https://api.nowpayments.io';
+
+    /**
+     * SANDBOX API endpoint
+     */
     const API_SANDBOX_ENDPOINT  = 'https://api-sandbox.nowpayments.io';
     
     /**
@@ -18,12 +29,12 @@ class Client
     const API_VERSION = 'v1';
     
     /**
-     * @var string
+     * @var string $apiKey
      */
     private $apiKey;
     
     /**
-     * @var bool
+     * @var bool $testModus
      */
     private $testModus;
 
@@ -76,7 +87,7 @@ class Client
     public $payouts;
 
     /**
-     * @var string
+     * @var string $headerToken
      * @author Ayatulloh Ahad R <ayatulloh@indiega.net>
      */
     public $headerToken;

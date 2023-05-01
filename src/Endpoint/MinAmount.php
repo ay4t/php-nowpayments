@@ -3,10 +3,8 @@
 namespace Ay4t\NOWPayments\Endpoint;
 
 /**
- * Min amount endpoint
- * 
- * @author Jonathan van 't Ende <jvantende@onetoweb.nl>
- * @copyright Onetoweb B.V.
+ * Class MinAmount
+ * @package Ay4t\NOWPayments\Endpoint
  */
 class MinAmount extends AbstractEndpoint
 {

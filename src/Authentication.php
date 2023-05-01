@@ -3,10 +3,22 @@
 namespace Ay4t\NOWPayments;
 
 /**
- * Authentication.
+ * Class Authentication
+ * @package Ay4t\NOWPayments
  * 
- * @author Jonathan van 't Ende <jvantende@onetoweb.nl>
- * @copyright Onetoweb B.V.
+ * Class ini digunakan untuk mengotentikasi request webhook atau ipn yang dikirim oleh Nowpayments
+ * Untuk memastikan data yang dikirim ke web Hook benar-benar dari pengirim yang sah
+ * 
+ * Contoh penggunaan pada controller Anda atau aplikasi anda sebagai berikut:
+ 
+ *   $content        = file_get_contents('php://input');
+ *   $receivedHmac   = $_SERVER['HTTP_X_NOWPAYMENTS_SIG'];
+ *   $ipnSecret      = 'IPNsecret';
+ *   $auth           = \Ay4t\NOWPayments\Authentication::authenticate($content, $receivedHmac, $ipnSecret);
+ *   if ( !$auth ) {
+ *       $return_status = false;
+ *   }
+
  */
 class Authentication
 {

@@ -3,6 +3,10 @@
 namespace Ay4t\NOWPayments\Endpoint;
 use Ay4t\NOWPayments\Endpoint\AbstractEndpoint;
 
+/**
+ * Class Payouts
+ * @package Ay4t\NOWPayments\Endpoint
+ */
 class Payouts extends AbstractEndpoint
 {
     const RESOURCE = 'payout';

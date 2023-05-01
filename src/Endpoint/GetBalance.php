@@ -2,6 +2,10 @@
 
 namespace Ay4t\NOWPayments\Endpoint;
 
+/**
+ * Class GetBalance
+ * @package Ay4t\NOWPayments\Endpoint
+ */
 class GetBalance extends AbstractEndpoint
 {
     const RESOURCE = 'balance';

@@ -3,10 +3,8 @@
 namespace Ay4t\NOWPayments\Endpoint;
 
 /**
- * Currency endpoint.
- * 
- * @author Jonathan van 't Ende <jvantende@onetoweb.nl>
- * @copyright Onetoweb B.V.
+ * Class Currency
+ * @package Ay4t\NOWPayments\Endpoint
  */
 class Currency extends AbstractEndpoint
 {
